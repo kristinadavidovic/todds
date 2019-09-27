@@ -1,0 +1,86 @@
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,700');
+$font-Lato: 'Lato', sans-serif;
+$font-Nunito: 'Nunito', sans-serif;
+
+// Colors
+$color-turquise: #44ddd0;
+$color-green: #27d7a1;
+$color-light-green: #45f69e;
+$color-light: #f8f8f8;
+$color-dark-green: #006450;
+
+$color-white: #fff;
+$color-light-grey: #eee;
+$color-light-blue: #cff8ef;
+$color-dark-grey: #5f5f5f;
+$color-black: #000;
+
+// Update Bulmas global variables
+$family-sans-serif: $font-Nunito;
+$primary: $color-green;
+
+$link: $color-light-green;
+
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+@keyframes background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+html {
+  background: linear-gradient(156deg, $color-turquise, $color-green);
+  background-size: 400% 400%;
+  animation: background 5s ease infinite both;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.centered-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-box {
+  min-height: 200px;
+  width: 100%;
+  max-width: 580px;
+  border-radius: 5px;
+  padding: 35px;
+
+  .buttons {
+    margin-top: 20px;
+  }
+}
+
+.title {
+  font-family: $font-Lato;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.white-box {
+  min-height: 200px;
+  width: 100%;
+  min-width: 400px;
+  max-width: 580px;
+  padding: 42px 62px;
+  border-radius: 5px;
+}
